@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [https://nextjs-crud-jet.vercel.app](https://nextjs-crud-jet.vercel.app) with your browser to see the result.
+Open []() with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

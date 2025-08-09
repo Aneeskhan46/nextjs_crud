@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 ///fetching the data (to show)
 async function getTopics() {
-  const res = await fetch("https://nextjs-crud-jet.vercel.app/api/topic", {
+  const res = await fetch("/api/topic", {
     cache: "no-store", // ensures fresh data every time
   });
   return res.json();

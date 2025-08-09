@@ -8,7 +8,7 @@ const Removebtn = ({ id }) => {
   const handleDelete = async () => {
     if (!confirm("Are you sure you want to delete this topic?")) return;
 
-    const res = await fetch(`https://nextjs-crud-jet.vercel.app/api/topic/${id}`, {
+    const res = await fetch(`/api/topic/${id}`, {
       method: "DELETE",
     });
 
