@@ -16,7 +16,7 @@ const Edittopic = () => {
   // Fetch existing topic details
   useEffect(() => {
     const fetchTopic = async () => {
-      const res = await fetch(`/api/topic/${id}`);
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/topic/${id}`);
       const data = await res.json();
       setTitle(data.title);
       setDescription(data.description);
@@ -28,7 +28,7 @@ const Edittopic = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch(`/api/topic/${id}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/topic/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, description }),
