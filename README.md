@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://nextjs-crud-jet.vercel.app](https://nextjs-crud-jet.vercel.app) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
@@ -35,18 +35,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-
-
-
 ### /// steps in the project ///
 
 1.npm i mongoose react-icons
 
-
-for backend
-2. create a mongo cluster 
-3.  Add ip 0.0.0.0/0  in network access of mongodb
-4.  connect mongodb in vscode in libs/mongo.js
+for backend 2. create a mongo cluster 3. Add ip 0.0.0.0/0 in network access of mongodb 4. connect mongodb in vscode in libs/mongo.js
 
 ❓ Your doubt:
 “In React with Express + Mongoose, when I cd backend and run the server, the terminal immediately shows DB connected — why doesn’t that happen in Next.js when I run npm run dev?”
@@ -71,19 +64,16 @@ For example:
 
 In an API route (/api/test)
 
-
-
 5. creating schema in model
 
-6. crud operation 
+6. crud operation
    i) insert and create
-   ii) delete and edit 
+   ii) delete and edit
 
-7. in the crud operaton 
-    we need an id   only for delete (app/api/topic/[id]/route.js )  and edit (app/edittopic/[id]page.jsx)
-    no need for create and read(show) (app/api/topic/route.js)
+7. in the crud operaton
+   we need an id only for delete (app/api/topic/[id]/route.js ) and edit (app/edittopic/[id]page.jsx)
+   no need for create and read(show) (app/api/topic/route.js)
 
-
-8. in the edit route we need to make two api 
- i) for fetching the data and stroing the value in the form
- ii) updating the data
+8. in the edit route we need to make two api
+   i) for fetching the data and stroing the value in the form
+   ii) updating the data

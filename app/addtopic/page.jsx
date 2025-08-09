@@ -13,8 +13,8 @@ export default function CreateTopicForm() {
    
 
     e.preventDefault();
-
-    const res = await fetch("http://localhost:3000/api/topic", {
+     //we use https://localhost:3000 in local  but for production we use this
+    const res = await fetch("https://nextjs-crud-jet.vercel.app/api/topic", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, description }),
