@@ -1,8 +1,8 @@
 "use client";
 // from .envfile
-if(process.env.NODE_ENV!="production"){
-    require('dotenv').config()
-}
+// if(process.env.NODE_ENV!="production"){
+//     require('dotenv').config()
+// }
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
