@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import React from 'react'
 
+// from .envfile
+if(process.env.NODE_ENV!="production"){
+    require('dotenv').config()
+}
 
 const Edittopic = () => {
 

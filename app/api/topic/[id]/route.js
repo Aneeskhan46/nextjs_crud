@@ -3,6 +3,8 @@ import { connectDB } from "@/libs/mongo.js";
 import Topic from "@/models/topic.js";
 import { NextResponse } from "next/server";
 
+
+
 // DELETE /api/topics/:id
 export async function DELETE(request, { params }) {
   try {

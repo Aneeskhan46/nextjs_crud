@@ -3,6 +3,11 @@ import Removebtn from './removebtn'
 import { HiPencilAlt } from 'react-icons/hi'
 import Link from 'next/link'
 
+// from .envfile
+if(process.env.NODE_ENV!="production"){
+    require('dotenv').config()
+}
+
 ///fetching the data (to show)
 async function getTopics() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/topic`, {

@@ -1,5 +1,10 @@
 "use client"; // because this button uses events
 
+// from .envfile
+if(process.env.NODE_ENV!="production"){
+    require('dotenv').config()
+}
+
 import React from 'react'
 import { HiOutlineTrash } from 'react-icons/hi'
 
